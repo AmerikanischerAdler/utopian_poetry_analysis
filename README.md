@@ -2,7 +2,7 @@
 
 ## Description
 
-A tool for analyzing utopian poetry. Featuring "Utopia" by Wislawa Szymborska
+A tool for analyzing utopian poetry. Featuring "Utopia" by Wislawa Szymborska.
 
 ### Stack
 
