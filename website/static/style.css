@@ -132,3 +132,62 @@ blockquote {
     font-size: 22px;
 }
 
+/* Word Choice Section */ 
+
+#word-choice {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#word-choice h2 {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+    font-size: 35px;
+}
+
+.word-choice-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.tree-img {
+    position: absolute;
+    height: auto;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.word-cards {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    left: 50%; 
+    transform: translateX(-58%);
+    pointer-events: none;
+}
+
+.word-card {
+    position: absolute;
+    width: 120px;
+    padding: 10px;
+    color: white;
+    background: var(--accent-main-clr);
+    font-family: var(--font-text);
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease;
+}
+

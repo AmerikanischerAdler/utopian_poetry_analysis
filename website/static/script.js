@@ -47,3 +47,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Tree Animation
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.word-card');
+  const radius = 300;
+  const centerX = 300;
+  const centerY = 0;
+
+  cards.forEach((card, i) => {
+    const angle = Math.PI * (i / (cards.length - 1));
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+    card.style.left = `${x}px`;
+    card.style.top = `${y}px`;
+  });
+
+  const trigger = document.querySelector('.word-cards-trigger');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.opacity = 1;
+            card.style.transform = 'scale(1)';
+          }, index * 200);
+        });
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  observer.observe(trigger);
+});
+
