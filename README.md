@@ -27,7 +27,7 @@ If python3 is not installed on your machine, run:
 ```bash
 brew update 
 brew install python3
-``` 
+```
 
 **TIP**: For MacOS, be sure that homebrew is installed on your machine. If not,
 visit [HomeBrew](https://brew.sh) to install.

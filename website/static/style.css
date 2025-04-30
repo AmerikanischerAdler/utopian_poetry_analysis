@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+:root {
+    /* Colorscheme */
+    --bg-clr: #F4F1EE;
+    --text-main-clr: #2C2C2C;
+    --accent-main-clr: #6C91C2;
+    --accent-sec-clr: #A77065;
+    --text-em-clr: #3E5C76;
+    --action-clr: #D98880;
+
+    /* Font Styles */
+    --font-heading: 'Cormorant Garamond';
+    --font-text: 'Merriweather';
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +23,16 @@
 
 body {
     width: 100%;
+    background-color: var(--bg-clr);
 }
 
-body > div {
-    width: 100%;
+h1, h2, h3, h4, h5, h6, strong {
+    color: var(--text-em-clr);
+    font-family: var(--font-heading);
+}
+
+p {
+    color: var(--text-main-clr);
+    font-family: var(--font-text);
 }
 
