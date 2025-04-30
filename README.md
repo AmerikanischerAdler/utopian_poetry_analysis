@@ -1,4 +1,4 @@
-# Utopian Poetry Analyzer
+# Utopian Poetry Analysis
 
 ## Description
 
@@ -15,7 +15,7 @@ A tool for analyzing utopian poetry. Featuring "Utopia" by Wislawa Szymborska
 1. Open Terminal and Clone Repository:
 
 ```bash
-git clone https://github.com/AmerikanischerAdler/utopian_poetry_analyzer
+git clone https://github.com/AmerikanischerAdler/utopian_poetry_analysis
 ```
 
 2. Install Python:
@@ -34,10 +34,10 @@ visit [HomeBrew](https://brew.sh) to install.
 
 3. Set Up Virtual Environment:
 
-Make sure you're in the utopian_poetry_analyzer directory
+Make sure you're in the utopian_poetry_analysis directory
 
 ```bash
-cd utopian_poetry_analyzer
+cd utopian_poetry_analysis
 ```
 
 Create virtual environment
@@ -64,10 +64,10 @@ deactivate
 
 1. Open Terminal
 
-2. Navigate to utopian_poetry_analyzer Directory:
+2. Navigate to utopian_poetry_analysis Directory:
 
 ```bash
-cd utopian_poetry_analyzer
+cd utopian_poetry_analysis
 ```
 
 3. Start Virtual Environment
