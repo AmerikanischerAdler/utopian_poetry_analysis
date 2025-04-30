@@ -21,10 +21,34 @@
     box-sizing: border-box;
 }
 
+/* Containers */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
+    color: var(--text-main-clr);
     background-color: var(--bg-clr);
+    font-size: 18px;
+    font-family: var(--font-text);
+    line-height: 1.75;
 }
+
+section {
+    min-height: 100vh;
+}
+
+/* Textual Elements */
+
+body, p, h1, h2, h3 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--text-em-clr);
@@ -34,5 +58,77 @@ h1, h2, h3, h4, h5, h6, strong {
 p {
     color: var(--text-main-clr);
     font-family: var(--font-text);
+}
+
+a {
+    color: var(--action-clr);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--action-clr);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-main-clr);
+    border-bottom: 1px solid var(--accent-main-clr);
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--accent-sec-clr);
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    color: var(--text-em-clr);
+    font-family: var(--font-heading);
+    background: rgba(167, 112, 101, 0.05);
+}
+
+/* Hero Section */ 
+
+#hero img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    transition: backdrop-filter 0.8s ease;
+}
+
+.hero-content.remove-blur {
+    backdrop-filter: blur(0px);
+}
+
+.hero-content blockquote {
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: -300px;
+    font-size: 45px;
+    background: rgba(221, 222, 221, 0.55);
+}
+
+.intro {
+    position: absolute;
+    width: 950px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.intro p {
+    margin-top: 420px;
+    font-size: 22px;
 }
 

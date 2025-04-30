@@ -2,11 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Utopian Poetry Analyzer</title>
+  <title>Utopian Poetry Analysis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+  <section id="hero">
+    <img src="{{ url_for('static', filename='images/utopia_bg.avif') }}">
+    <div class="hero-content">
+      <div class="intro">
+        <blockquote>“Island where all becomes clear...”</blockquote>
+        <p>An exploration of language, devices, and desire in <em>Utopia</em> by Wisława Szymborska.</p>
+        <a href="#word-choice" class="scroll-btn">Discover Utopia ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="word-choice">
+    <h2>Word Choice</h2>
+  </section>
+
+  <section id="lit-devs">
+    <h2>Literary Devices</h2>
+  </section>
+
+  <section id="genre">
+    <h2>Utopian Genre</h2>
+  </section>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
