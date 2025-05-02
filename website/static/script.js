@@ -50,7 +50,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Tree Animation
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.word-card');
-    const radius = 300;
+    const radius = 320;
     const centerX = 250;
     const centerY = 300;
 
@@ -81,5 +81,107 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     observer.observe(trigger);
+});
+
+// Sliding Information
+const word1 = document.getElementById("word1-btn");
+const word2 = document.getElementById("word2-btn");
+const word3 = document.getElementById("word3-btn");
+const word4 = document.getElementById("word4-btn");
+const word5 = document.getElementById("word5-btn");
+
+word1.addEventListener("click", () => {
+    const word1Elements = document.querySelectorAll(".word1");
+
+    word1Elements.forEach((el) => {
+        if (el.style.marginLeft !== "0px") {
+            el.style.marginLeft = "0px";
+            el.style.marginRight = "0px";
+        } else {
+            if (el.classList.contains("word-quote")) {
+                el.style.marginLeft = "-400px";
+                el.style.marginRight = "400px";
+            } else {
+                el.style.marginLeft = "400px";
+                el.style.marginRight = "-400px";
+            }
+        }
+    });
+});
+
+word2.addEventListener("click", () => {
+    const word2Elements = document.querySelectorAll(".word2");
+
+    word2Elements.forEach((el) => {
+        if (el.style.marginLeft !== "0px") {
+            el.style.marginLeft = "0px";
+            el.style.marginRight = "0px";
+        } else {
+            if (el.classList.contains("word-quote")) {
+                el.style.marginLeft = "-400px";
+                el.style.marginRight = "400px";
+            } else {
+                el.style.marginLeft = "400px";
+                el.style.marginRight = "-400px";
+            }
+        }
+    });
+});
+
+word3.addEventListener("click", () => {
+    const word3Elements = document.querySelectorAll(".word3");
+
+    word3Elements.forEach((el) => {
+        if (el.style.marginLeft !== "0px") {
+            el.style.marginLeft = "0px";
+            el.style.marginRight = "0px";
+        } else {
+            if (el.classList.contains("word-quote")) {
+                el.style.marginLeft = "-400px";
+                el.style.marginRight = "400px";
+            } else {
+                el.style.marginLeft = "400px";
+                el.style.marginRight = "-400px";
+            }
+        }
+    });
+});
+
+word4.addEventListener("click", () => {
+    const word4Elements = document.querySelectorAll(".word4");
+
+    word4Elements.forEach((el) => {
+        if (el.style.marginLeft !== "0px") {
+            el.style.marginLeft = "0px";
+            el.style.marginRight = "0px";
+        } else {
+            if (el.classList.contains("word-quote")) {
+                el.style.marginLeft = "-400px";
+                el.style.marginRight = "400px";
+            } else {
+                el.style.marginLeft = "400px";
+                el.style.marginRight = "-400px";
+            }
+        }
+    });
+});
+
+word5.addEventListener("click", () => {
+    const word5Elements = document.querySelectorAll(".word5");
+
+    word5Elements.forEach((el) => {
+        if (el.style.marginLeft !== "0px") {
+            el.style.marginLeft = "0px";
+            el.style.marginRight = "0px";
+        } else {
+            if (el.classList.contains("word-quote")) {
+                el.style.marginLeft = "-400px";
+                el.style.marginRight = "400px";
+            } else {
+                el.style.marginLeft = "400px";
+                el.style.marginRight = "-400px";
+            }
+        }
+    });
 });
 
