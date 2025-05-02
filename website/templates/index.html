@@ -20,16 +20,61 @@
 
   <section id="word-choice">
     <h2>Word Choice</h2>
-    <div class="word-desc"></div>
+
+    <div id="quote-container">
+      <div class="word-quote word1">
+        <blockquote>
+          The Tree of Valid Supposition grows here with branches 
+          <span>disentangled</span> 
+          since time immemorial.
+        </blockquote>
+      </div>
+      <div class="word-quote word2">
+        <blockquote>
+          The Tree of Valid Supposition grows here with branches disentangled since time 
+          <span>immemorial</span>.
+        </blockquote>
+      </div>
+      <div class="word-quote word3">
+        <blockquote>
+          Echoes stir 
+          <span>unsummoned</span> 
+          and eagerly explain all the secrets of the worlds.
+        </blockquote>
+      </div>
+      <div class="word-quote word4">
+        <blockquote>
+          For all its charms, the island is 
+          <span>uninhabited</span>, 
+          and the faint footprints scattered on its beaches turn without exception to the sea.
+        </blockquote>
+      </div>
+      <div class="word-quote word5">
+        <blockquote>
+          As if all you can do here is leave and plunge, never to return, into the depths. 
+          <br>
+          Into <span>unfathomable</span> life.
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="hidden word-desc word1">
+      <h4>nurture notes stuff</h4>
+    </div>
+    <div class="hidden word-desc word2"></div>
+    <div class="hidden word-desc word3"></div>
+    <div class="hidden word-desc word4"></div>
+    <div class="hidden word-desc word5"></div>
+
     <div class="word-choice-container">
       <img src="{{ url_for('static', filename='images/tree.png') }}" class="tree-img" alt="Tree Illustration">
       <div class="word-cards-trigger">
         <div class="word-cards">
-          <div class="word-card">Clarity</div>
-          <div class="word-card">Stillness</div>
-          <div class="word-card">Certainty</div>
-          <div class="word-card">Innocence</div>
-          <div class="word-card">Harmony</div>
+          <div class="word-card" id="word1-btn">Disentangled</div>
+          <div class="word-card" id="word2-btn">Immemorial</div>
+          <div class="word-card" id="word3-btn">Unsummoned</div>
+          <div class="word-card" id="word4-btn">Uninhabited</div>
+          <div class="word-card" id="word5-btn">Unfathomable</div>
         </div>
       </div>
     </div>
