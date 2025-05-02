@@ -273,3 +273,56 @@ dd {
     font-size: 14px;
 }
 
+/* Literary Devices */
+
+#lit-devs {
+    height: 360vh;
+}
+
+.scenery {
+    position: absolute;
+    width: 400px;
+}
+
+.scenery img {
+    height: auto;
+    width: 100%;
+    border: 8px solid var(--accent-sec-clr);
+}
+
+.scenery blockquote {
+    width: 100%;
+}
+
+.pic-left {
+    left: 25px;
+}
+
+.pic-right {
+    right: 25px;
+}
+
+#bush {
+    top: 150px;
+}
+
+#tree {
+    top: calc(150px + 400px);
+}
+
+#spring {
+    top: calc(550px + 400px);
+}
+
+#valley {
+    top: calc(950px + 400px);
+}
+
+#cave {
+    top: calc(1350px + 600px);
+}
+
+#lake {
+    top: calc(1950px + 400px);
+}
+
