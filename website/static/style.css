@@ -293,7 +293,7 @@ dd {
     font-size: 14px;
 }
 
-/* Literary Devices */
+/* Literary Devices Section */
 
 #lit-devs {
     height: 360vh;
@@ -352,6 +352,41 @@ dd {
 
 #lake {
     top: calc(1950px + 400px);
+}
+
+/* Utopian Genre Section */
+
+#genre {
+    gap: 100px;
+}
+
+.horz {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 200px;
+    width: 40%;
+    padding: 10px 20px;
+    border: 2px solid var(--accent-main-clr);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box h4 {
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 14px;
+}
+
+.box dl {
+    margin-top: 10px;
+    padding: 5px 20px;
 }
 
 /* Animations */
