@@ -73,6 +73,10 @@ h2 {
     border-bottom: 2px solid var(--accent-sec-clr);
 }
 
+strong {
+    font-weight: 600;
+}
+
 p {
     color: var(--text-main-clr);
     font-family: var(--font-text);
@@ -292,6 +296,14 @@ dd {
 
 .scenery blockquote {
     width: 100%;
+}
+
+.scenery p {
+    font-size: 14px;
+}
+
+.scenery strong {
+    font-size: 20px;
 }
 
 .pic-left {
