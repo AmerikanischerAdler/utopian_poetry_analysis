@@ -21,6 +21,16 @@
     box-sizing: border-box;
 }
 
+*::-moz-selection {
+    background: var(--accent-main-clr);
+    color: var(--text-main-clr);
+}
+
+*::selection {
+    background: var(--accent-main-clr);
+    color: var(--text-main-clr);
+}
+
 .hidden {
     display: none;
 }
