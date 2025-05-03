@@ -116,7 +116,7 @@ hr {
 
 /* Hero Section */ 
 
-#hero img {
+#hero img, #ending img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -138,15 +138,7 @@ hr {
     backdrop-filter: blur(0px);
 }
 
-.hero-content blockquote {
-    width: 100%;
-    margin-top: 220px;
-    margin-bottom: -220px;
-    font-size: 45px;
-    background: rgba(221, 222, 221, 0.55);
-}
-
-.intro {
+.intro, .outro {
     position: absolute;
     width: 950px;
     left: 50%;
@@ -157,6 +149,20 @@ hr {
     align-items: center;
     justify-content: center;
     gap: 50px;
+}
+
+.intro blockquote {
+    width: 100%;
+    margin-top: 220px;
+    margin-bottom: -220px;
+    font-size: 45px;
+    background: rgba(221, 222, 221, 0.55);
+}
+
+.outro blockquote {
+    width: 80%;
+    font-size: 30px;
+    background: rgba(221, 222, 221, 0.75);
 }
 
 .intro p {
