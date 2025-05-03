@@ -185,3 +185,18 @@ word5.addEventListener("click", () => {
     });
 });
 
+// Slide Animations
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    document.querySelectorAll('.pic-right, .pic-left').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const trigger = window.innerHeight * 0.8;
+        
+        if (rect.top < trigger) {
+            el.classList.add('visible');
+        } else {
+            el.classList.remove('visible');
+        }
+    });
+});
+
